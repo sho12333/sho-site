@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="../dist/output.css" rel="stylesheet" />
   </head>
-  <body class="m-0">
+  <body class="m-0 scroll-smooth">
     <header>
       <nav class="bg-white border-gray-200 dark:bg-gray-900">
         <div
@@ -188,41 +188,57 @@
         </div>
       </div>
     </section>
-    <section id="portfolio">
+    <section id="portfolio" class="h-screen items-center justify-center">
       <div class="font-bold text-2xl text-center mb-5 mt-44 md:mt-10">
         ポートフォリオ
       </div>
       <div class="flex justify-center">
-        <div id="default-carousel" class="relative w-3/4" data-carousel="slide">
-          <div class="relative overflow-hidden rounded-lg h-80">
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <div
+          id="default-carousel"
+          class="relative w-3/4 h-full"
+          data-carousel="slide"
+        >
+          <div class="relative overflow-hidden rounded-lg h-40 md:h-96 xs:h-52">
+            <div
+              class="block duration-700 ease-in-out transform"
+              data-carousel-item
+            >
               <img
                 src="./images/home.png"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                class="absolute block w-full object-contain top-0 left-0"
               />
             </div>
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div
+              class="block duration-700 ease-in-out transform"
+              data-carousel-item
+            >
               <img
                 src="./images/pic1.png"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                class="absolute block w-full object-contain top-0 left-0"
               />
             </div>
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div
+              class="block duration-700 ease-in-out transform"
+              data-carousel-item
+            >
               <img
                 src="./images/pic2.png"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                class="absolute block w-full object-contain top-0 left-0"
               />
             </div>
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div
+              class="block duration-700 ease-in-out transform"
+              data-carousel-item
+            >
               <img
                 src="./images/pic3.png"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                class="absolute block w-full object-contain top-0 left-0"
               />
             </div>
           </div>
           <button
             type="button"
-            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150"
             data-carousel-prev
           >
             <span
@@ -248,7 +264,7 @@
           </button>
           <button
             type="button"
-            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-150"
             data-carousel-next
           >
             <span
